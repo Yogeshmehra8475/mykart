@@ -6,6 +6,8 @@ import Loading from "./Loading";
 import Nextpage from "./NextPage";
 
 function ProductListPage() {
+
+
   const [productList, setProductList] = useState([]);
   const [loading, setLoading] = useState(true);
 
