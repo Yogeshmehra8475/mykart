@@ -5,7 +5,6 @@ import ProductDetail from "./ProductDetail";
 import NavBar from "./NavBar";
 import Copyright from "./Copyright";
 import NotFound from "./NotFound";
-import SignUpPage from "./SignUpPage";
 
 function App() {
   const savedDataString = localStorage.getItem("my-cart") || "{}";
@@ -34,7 +33,6 @@ function App() {
             path="/products/:id"
             element={<ProductDetail onAddToCart={handleAddToCart} />}
           />
-          <Route path="/signup" element={<SignUpPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
