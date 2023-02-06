@@ -5,6 +5,8 @@ import ProductDetail from "./ProductDetail";
 import NavBar from "./NavBar";
 import Copyright from "./Copyright";
 import NotFound from "./NotFound";
+import Login from "./Login";
+import NextPage from "./NextPage";
 
 function App() {
   const savedDataString = localStorage.getItem("my-cart") || "{}";
@@ -34,6 +36,8 @@ function App() {
             element={<ProductDetail onAddToCart={handleAddToCart} />}
           />
           <Route path="*" element={<NotFound />} />
+          <Route path="/login/" element={<Login />} />
+          <Route path="copyright/" element={<Copyright />} />
         </Routes>
       </div>
       <Copyright />
