@@ -7,8 +7,8 @@ function NavBar({ productCount }) {
     <div className="py-4 bg-white">
       <div className="max-w-6xl flex justify-between mx-auto items-center">
         <img
-          className="h-16"
-          src="https://cdn.discordapp.com/attachments/999217361037053983/1009093455500296262/Amazon_logo.png"
+          className="h-20"
+          src="images/amazonLogo.png"
         />
         <div className="flex justify-right pl-96 pt-6 items-end text-blue-600 text-lg font-dark">
           <Link to="/login/">Login</Link>
